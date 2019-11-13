@@ -4,110 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi Cuenta</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="css/cuenta.css">
-    <script src="js/validar.js"></script>
+    <link rel="stylesheet" href="font.css">
+
 
 </head>
 
 <body>
     <header>
         <div class="row center-xs">
-            <div class="navegacion">
-                <nav>
-                    <ul>
-                        <li><a href="inicio.html">Inicio <span class="icon icon-up-dir"></span></a></li>
-                        <li><a href="#">Contacto <span class="icon icon-up-dir"></span></a></li>
-                        <li>
-                            <a href="#">Productos <span class="icon icon-up-dir"></span></a>
-                            <div class="submenu">
-                                <div class="submenu-items">
-                                    <p>Alimentos</p>
-                                    <ul>
-                                        <li><a href="alimentosGatos.html">Gato</a></li>
-                                        <li><a href="#">Perro</a></li>
-                                        <li><a href="#">Ave</a></li>
-                                    </ul>
-                                </div>
-                                <div class="submenu-items">
-                                    <p>Accesorios</p>
-                                    <ul>
-                                        <li><a href="#">Gato</a></li>
-                                        <li><a href="#">Perro</a></li>
+            <div class="col-xs-12">
+                <div class="navegacion">
+                    <nav>
+                        <ul>
+                            <li><a href="inicio.html">Inicio <span class="icon icon-up-dir"></span></a></li>
 
-                                    </ul>
-                                </div>
+                            <li>
+                                <a href="#">Productos <span class="icon icon-up-dir"></span></a>
+                                <div class="submenu">
+                                    <div class="submenu-items">
+                                        <p>Alimentos</p>
+                                        <ul>
+                                            <li><a href="alimentosGatos.html">Gato</a></li>
+                                            <li><a href="#">Perro</a></li>
 
-                            </div>
-                        </li>
-                        <li><a href="cuenta.html">Mi cuenta <span class="icon icon-up-dir"></span></a></li>
-                    </ul>
-                </nav>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items">
+                                        <p>Accesorios</p>
+                                        <ul>
+                                            <li><a href="#">Gato</a></li>
+                                            <li><a href="#">Perro</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="cuenta.html">Iniciar Sesión <span class="icon icon-up-dir"></span></a></li>
+                            <li><a href="#">Contacto <span class="icon icon-up-dir"></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-        <div class="row betweem-xs">
-            <div class="container">
-                <div class="col-xs-12 col-sm-12">
-                    <img class="imagen" src="img/Imagen_formulario.png" alt="">
+            <div class="row betweem-xs">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-12">
+                        <img class="imagen" src="img/maskopettemafondo.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <hr>
     </header>
-    <div class="container">
-        <section class="row">
-            <article class="col-xs-12 col-md-6">
-                <form class="formulario" onsubmit="return validar();">
-                    <h1 class="form_titulo">Iniciar Sesión</h1>
-                    <input id="usuario" name="usuario" type="text" class="form_input">
-                    <label class="form_label">Usuario</label>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
 
-                    <input id="clave" name="clave" type="text" class="form_input">
-                    <label class="form_label">Contraseña</label>
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
 
-                    <input type="submit" class="form_submit" value="Log in">
-                </form>
-            </article>
-            <article class="col-xs-12 col-md-6">
-                <form action="" class="formulario">
-                    <h2 class="form_titulo">Regístrate</h2>
-                    <input id="usuario" name="usuario" type="text" class="form_input">
-                    <label class="form_label">Usuario</label>
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
 
-                    <input id="email" name="email" type="text" class="form_input">
-                    <label class="form_label">Email</label>
+                <input type="password" placeholder="Contraseña" required>
 
-                    <input id="clave" name="clave" type="password" class="form_input">
-                    <label class="form_label">Contraseña</label>
+                <input type="email" placeholder="Correo Electronico" required>
 
-                    <input id="confir_clave" name="confir_clave" type="password" class="form_input">
-                    <label class="form_label">Confirmar Contraseña</label>
+                <input type="text" placeholder="Teléfono" required>
 
-                    <input type="submit" class="form_submit" value="Register">
-                    <p>Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web</p>
-                </form>
-            </article>
-            <script src="js/cuenta.js"></script>
-        </section>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
     </div>
-    <div class="container">
-        <footer>
-            <hr>
-            <br>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-1">
-                    <h3>MascoPet</h3>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 ">
 
-                    <span>Correo: maskopet.rv@atencion.cl</span><br>
-                    <span>Telefono: +56 987817765 / 800 800 3000</span>
+    <script src="js/cuenta.js"></script>
+
+    <footer>
+        <div class="row center-xs">
+            <div class="col-xs">
+                <div class="social/bar" id="ss">
+                    <a href="https://www.instagram.com/maskopet.chi/" class="icon icon-instagram" target="_blank"></a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-xs">
+                <div class="col-xs">
+                    <h3>MASKOPET</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs" id="ft">
+            <div class="col-xs">
+                <span>Despacho Gratis V Región</span><br>
+                <span>Correo: maskopet.rv@atencion.cl</span><br>
+                <span>Telefono: +56 987817765 / 800 800 3000</span>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

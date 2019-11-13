@@ -4,6 +4,7 @@
 }
 
 body {
+    background-color: #fff;
     font-family: 'Raleway';
     font-size: 14px;
     letter-spacing: 2px;
@@ -13,12 +14,6 @@ body {
     width: 100%;
 }
 
-footer {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background: #000000;
-}
-
 .imagen {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -26,13 +21,13 @@ footer {
 }
 
 .navegacion nav ul li:hover {
-    background: rgba(240, 249, 72, 0.658);
+    background: #565656;
 }
 
 .navegacion nav {
     width: 100%;
-    background: #61605F;
-    margin: 50px auto;
+    background: #E86611;
+    margin: 0;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0px;
@@ -70,9 +65,9 @@ footer {
     padding: 20px;
     position: absolute;
     display: none;
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0px 0px 5px 1px #565656;
+    -moz-box-shadow: 0px 0px 5px 1px #565656;
+    box-shadow: 0px 0px 5px 1px #565656;
 }
 
 .navegacion nav ul li:hover .submenu {
@@ -88,25 +83,32 @@ footer {
     width: 110px;
     display: block;
     padding-bottom: 5px;
-    border-bottom: 1px solid #565656;
+    border-bottom: 1px solid #E86611;
     margin-bottom: 10px;
 }
 
 .navegacion nav ul li .submenu .submenu-items a {
-    color: #474747;
+    color: #565656;
     text-decoration: none;
     margin: 6px 0;
     display: block;
 }
 
-#bloque {
-    background-color: #F1F948;
+.navegacion nav ul li .submenu .submenu-items a:hover {
+    background: #E86611;
+    color: #fff;
 }
 
-.bloc {
-    border: 1px solid rgb(0, 0, 0);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+footer {
+    font-family: 'Jomolhari', serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333231;
+    background: #E86611;
+}
+
+footer span {
+    font-size: large;
 }
 
 #ss {
@@ -115,12 +117,8 @@ footer {
 
 h1 {
     text-align: center;
-    font-family: 'Coming Soon', cursive;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Merriweather', serif;
+    color: #333231;
 }
 
 h3 {
@@ -137,4 +135,18 @@ h3 {
 
 .main {
     text-align: center;
+}
+
+span {
+    color: #333231;
+}
+
+#marcas {
+    width: auto;
+    margin: auto;
+}
+
+.ss {
+    margin-top: 0;
+    border-top: 0;
 }
